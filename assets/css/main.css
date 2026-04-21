@@ -10,6 +10,7 @@
   --accent-soft: #1b4cff;
   --highlight: #1147e6;
   --shadow: 0 24px 80px rgba(11, 47, 143, 0.16);
+  --font-main: "Avenir", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -37,7 +38,7 @@ html[data-theme="dark"] {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-main);
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(17, 71, 230, 0.22), transparent 28%),
@@ -234,8 +235,15 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-main);
   font-weight: 600;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
 h1 {
@@ -280,6 +288,7 @@ h1 {
 }
 
 .hero-copy {
+  order: 1;
   position: relative;
   z-index: 1;
   display: flex;
@@ -418,6 +427,7 @@ h1 {
 }
 
 .hero-visual {
+  order: 2;
   display: grid;
   place-items: center;
   min-height: 580px;
@@ -551,6 +561,22 @@ h1 {
   text-decoration: none;
   word-break: break-word;
   transition: color 180ms ease, opacity 180ms ease;
+}
+
+.contact-reveal {
+  border: 1px solid var(--line);
+  background: rgba(17, 71, 230, 0.06);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.contact-reveal:hover {
+  background: rgba(17, 71, 230, 0.12);
+  border-color: rgba(17, 71, 230, 0.2);
 }
 
 .contact-link:hover {

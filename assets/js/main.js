@@ -5,6 +5,7 @@ const currentPdfLinks = document.querySelectorAll(".current-pdf-link");
 const themeGraphics = document.querySelectorAll(".theme-graphic");
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menuLinks = document.querySelectorAll(".section-menu a");
+const emailCta = document.querySelector(".contact-email-cta");
 const root = document.documentElement;
 
 const languageKey = "alice-cv-language";
@@ -79,6 +80,22 @@ const preferredTheme =
   window.localStorage.getItem(themeKey) ||
   (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
+function decodeChars(chars) {
+  return String.fromCharCode(...chars);
+}
+
+function initEmailCta() {
+  if (!emailCta) {
+    return;
+  }
+
+  const email = decodeChars([97, 108, 105, 99, 101, 99, 111, 109, 97, 99, 99, 104, 105, 111, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109]);
+  emailCta.addEventListener("click", () => {
+    window.location.href = `mailto:${email}`;
+  });
+}
+
 setLanguage(preferredLanguage);
 setTheme(preferredTheme);
 setMenuState(false);
+initEmailCta();
