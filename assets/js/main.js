@@ -75,7 +75,7 @@ menuLinks.forEach((link) => {
   });
 });
 
-const preferredLanguage = window.localStorage.getItem(languageKey) || "it";
+const preferredLanguage = window.localStorage.getItem(languageKey) || "en";
 const preferredTheme =
   window.localStorage.getItem(themeKey) ||
   (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
