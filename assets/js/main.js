@@ -91,7 +91,9 @@ menuLinks.forEach((link) => {
   });
 });
 
-const preferredLanguage = window.localStorage.getItem(languageKey) || "en";
+const browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+const deviceDefaultLanguage = browserLang.startsWith("it") ? "it" : "en";
+const preferredLanguage = window.localStorage.getItem(languageKey) || deviceDefaultLanguage;
 const preferredTheme =
   window.localStorage.getItem(themeKey) ||
   (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
