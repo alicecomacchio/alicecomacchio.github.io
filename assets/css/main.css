@@ -96,15 +96,16 @@ body::before {
   top: 22px;
   right: 22px;
   z-index: 4;
-  border: 1px solid rgba(219, 230, 255, 0.24);
+  border: 1px solid rgba(16, 37, 95, 0.24);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #f5f8ff;
+  background: rgba(248, 250, 255, 0.92);
+  color: #10255f;
   backdrop-filter: blur(10px);
   padding: 10px 14px;
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  box-shadow: 0 10px 24px rgba(5, 20, 58, 0.16);
 }
 
 .mobile-menu-lines {
@@ -447,6 +448,7 @@ h1 {
   width: 100%;
   height: auto;
   display: block;
+  margin-inline: auto;
 }
 
 .content-grid {
@@ -542,6 +544,7 @@ h1 {
   list-style: none;
   display: grid;
   gap: 14px;
+  line-height: 1.72;
 }
 
 .contact-list span,
@@ -740,7 +743,7 @@ h1 {
 
 .design-thinking-intro {
   max-width: none;
-  line-height: 1.7;
+  line-height: 1.72;
   color: var(--muted);
 }
 
@@ -1395,7 +1398,7 @@ body.print-preview-page .page-shell {
 }
 
 @page {
-  size: A4;
+  size: A4 portrait;
   margin: 6mm;
 }
 
@@ -1633,12 +1636,14 @@ html[data-theme="dark"] .hero-skills-set span {
     padding-top: 0;
     width: 100%;
     max-width: 680px;
-    padding-right: 18px;
+    padding-inline: 12px 20px;
   }
 
   .hero-portrait {
     width: min(88vw, 500px);
-    transform: translateY(0);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.96) 48%, rgba(0, 0, 0, 0.42) 74%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.96) 48%, rgba(0, 0, 0, 0.42) 74%, rgba(0, 0, 0, 0) 100%);
   }
@@ -1856,6 +1861,14 @@ html[data-theme="dark"] .hero-skills-set span {
     right: 18px;
   }
 
+  .hero-skills-set span {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.1;
+    font-size: 0.72rem;
+    padding: 7px 10px;
+  }
+
   .hero-controls,
   .tools-grid {
     width: 100%;
@@ -1885,7 +1898,7 @@ html[data-theme="dark"] .hero-skills-set span {
   }
 
   .hero-portrait {
-    width: min(106vw, 470px);
+    width: min(92vw, 470px);
   }
 
   .section-heading {
@@ -1905,7 +1918,7 @@ html[data-theme="dark"] .hero-skills-set span {
   .hero-summary {
     max-width: none;
     margin-top: 16px;
-    padding-right: 0;
+    padding-right: 8px;
     font-size: 0.98rem;
     line-height: 1.68;
   }
@@ -1960,8 +1973,24 @@ html[data-theme="dark"] .hero-skills-set span {
 
 }
 
+@media (max-width: 420px) {
+  .hero-pills-band {
+    padding-inline: 14px;
+  }
+
+  .hero-skills-set {
+    gap: 8px;
+    padding-right: 8px;
+  }
+
+  .hero-skills-set span {
+    font-size: 0.66rem;
+    padding: 6px 8px;
+  }
+}
+
 @page {
-  size: A4;
+  size: A4 portrait;
   margin: 16mm;
 }
 

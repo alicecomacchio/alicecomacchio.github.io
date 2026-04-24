@@ -4,6 +4,8 @@ const translatableNodes = document.querySelectorAll("[data-it][data-en]");
 const currentPdfLinks = document.querySelectorAll(".current-pdf-link");
 const themeGraphics = document.querySelectorAll(".theme-graphic");
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const mobileSidebar = document.querySelector(".sidebar");
+const sectionMenu = document.querySelector(".section-menu");
 const menuLinks = document.querySelectorAll(".section-menu a");
 const emailCta = document.querySelector(".contact-email-cta");
 const root = document.documentElement;
@@ -68,6 +70,20 @@ if (mobileMenuToggle) {
     setMenuState(root.dataset.menuOpen !== "true");
   });
 }
+
+if (mobileSidebar && sectionMenu) {
+  mobileSidebar.addEventListener("click", (event) => {
+    if (!sectionMenu.contains(event.target)) {
+      setMenuState(false);
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && root.dataset.menuOpen === "true") {
+    setMenuState(false);
+  }
+});
 
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {

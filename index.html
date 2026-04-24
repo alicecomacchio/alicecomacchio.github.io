@@ -15,15 +15,13 @@
           type="button"
           aria-expanded="false"
           aria-controls="site-menu"
-          data-it="Menu"
-          data-en="Menu"
         >
           <span class="mobile-menu-lines" aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
           </span>
-          <span class="mobile-menu-label">Menu</span>
+          <span class="mobile-menu-label" data-it="Menu" data-en="Menu">Menu</span>
         </button>
         <div class="hero-visual" aria-label="Foto profilo di Alice Comacchio">
           <div class="hexagon-frame">
@@ -68,8 +66,24 @@
 
               <div class="control-group">
                 <div class="theme-switch" aria-label="Theme switcher">
-                  <button class="theme-button active" type="button" data-theme="light">Light</button>
-                  <button class="theme-button" type="button" data-theme="dark">Dark</button>
+                  <button
+                    class="theme-button active"
+                    type="button"
+                    data-theme="light"
+                    data-it="Chiaro"
+                    data-en="Light"
+                  >
+                    Chiaro
+                  </button>
+                  <button
+                    class="theme-button"
+                    type="button"
+                    data-theme="dark"
+                    data-it="Scuro"
+                    data-en="Dark"
+                  >
+                    Scuro
+                  </button>
                 </div>
               </div>
 
@@ -144,8 +158,24 @@
                   Modalità
                 </span>
                 <div class="theme-switch" aria-label="Theme switcher mobile">
-                  <button class="theme-button active" type="button" data-theme="light">Light</button>
-                  <button class="theme-button" type="button" data-theme="dark">Dark</button>
+                  <button
+                    class="theme-button active"
+                    type="button"
+                    data-theme="light"
+                    data-it="Chiaro"
+                    data-en="Light"
+                  >
+                    Chiaro
+                  </button>
+                  <button
+                    class="theme-button"
+                    type="button"
+                    data-theme="dark"
+                    data-it="Scuro"
+                    data-en="Dark"
+                  >
+                    Scuro
+                  </button>
                 </div>
               </div>
 
@@ -159,13 +189,12 @@
                 Stampa PDF
               </a>
             </div>
-            <a href="#how-i-think" data-it="How I Think" data-en="How I Think">How I Think</a>
             <a
               href="#design-thinking"
-              data-it="Design Thinking"
-              data-en="Design Thinking"
+              data-it="Approccio ai progetti"
+              data-en="Project Approach"
             >
-              Design Thinking
+              Approccio ai progetti
             </a>
             <a
               href="#work-experience"
@@ -176,7 +205,7 @@
             </a>
             <a href="#education" data-it="Educazione" data-en="Education">Educazione</a>
             <a href="#contact" data-it="Contatti" data-en="Contact">Contatti</a>
-            <a href="#tools" data-it="Tools" data-en="Tools">Tools</a>
+            <a href="#tools" data-it="Strumenti" data-en="Tools">Strumenti</a>
             <a
               href="https://drive.google.com/drive/u/0/folders/1caZQcHH-zPnYdEuzG8Q0CjWB6Q5udoi3"
               target="_blank"
@@ -190,36 +219,23 @@
         </aside>
 
         <section class="main-column">
-          <article class="content-section" id="how-i-think">
-            <div class="section-heading">
-              <h2 data-it="How I Think" data-en="How I Think">How I Think</h2>
-            </div>
-            <p
-              data-it="Penso al prodotto come al punto di incontro tra esperienza utente, fattibilità tecnica e sostenibilità di business. Porto nel lavoro quotidiano il rigore della ricerca UX e la visione sistemica del Product Management: ascolto il contesto, chiarisco i problemi, allineo i team e trasformo insight, benchmark e feedback in decisioni concrete lungo tutto il lifecycle."
-              data-en="I see product as the meeting point between user experience, technical feasibility, and business sustainability. In my daily work I combine the rigor of UX research with the systemic perspective of Product Management: I read the context, clarify problems, align teams, and turn insights, benchmarks, and feedback into concrete decisions across the full lifecycle."
-            >
-              Penso al prodotto come al punto di incontro tra esperienza utente, fattibilità
-              tecnica e sostenibilità di business. Porto nel lavoro quotidiano il rigore della
-              ricerca UX e la visione sistemica del Product Management: ascolto il contesto,
-              chiarisco i problemi, allineo i team e trasformo insight, benchmark e feedback in
-              decisioni concrete lungo tutto il lifecycle.
-            </p>
-          </article>
-
           <article class="content-section design-thinking-section" id="design-thinking">
             <div class="section-heading">
-              <h2 data-it="Design Thinking" data-en="Design Thinking">Design Thinking</h2>
+              <h2 data-it="Approccio ai progetti" data-en="Project Approach">
+                Approccio ai progetti
+              </h2>
             </div>
             <div class="design-thinking-layout">
               <div class="design-thinking-header">
                 <p
                   class="design-thinking-intro"
-                  data-it="Il mio approccio al progetto segue un ciclo iterativo: prima ascolto e chiarisco il problema, poi trasformo gli insight in opzioni, prototipi, test e implementazione concreta con i team."
-                  data-en="My project approach follows an iterative cycle: first I listen and frame the problem, then I turn insights into options, prototypes, testing, and concrete implementation with teams."
+                  data-it="Gli studi in design thinking mi hanno permesso di avere un approccio al progetto che segue un ciclo iterativo: prima ascolto e chiarisco il problema, poi trasformo gli insight in opzioni, prototipi, test e implementazione concreta con i team."
+                  data-en="My design thinking studies gave me a project approach that follows an iterative cycle: first I listen and frame the problem, then I turn insights into options, prototypes, testing, and concrete implementation with teams."
                 >
-                  Il mio approccio al progetto segue un ciclo iterativo: prima ascolto e chiarisco
-                  il problema, poi trasformo gli insight in opzioni, prototipi, test e
-                  implementazione concreta con i team.
+                  Gli studi in design thinking mi hanno permesso di avere un approccio al progetto
+                  che segue un ciclo iterativo: prima ascolto e chiarisco il problema, poi
+                  trasformo gli insight in opzioni, prototipi, test e implementazione concreta con
+                  i team.
                 </p>
               </div>
               <figure class="dt-figure dt-figure-light">
@@ -311,11 +327,11 @@
               </p>
               <ul class="bullet-list">
                 <li
-                  data-it="Ho guidato user research e market research, traducendo insight in product requirements e strategia early-stage."
-                  data-en="Led user and market research, translating insights into product requirements and early-stage strategy."
+                  data-it="Ho guidato user research e market research, traducendo insight in product requirements."
+                  data-en="Led user and market research, translating insights into product requirements."
                 >
                   Ho guidato user research e market research, traducendo insight in product
-                  requirements e strategia early-stage.
+                  requirements.
                 </li>
                 <li
                   data-it="Ho progettato e validato concept IoT, incluso un EV charger con computer vision, attraverso UX/UI design e prototipazione."
@@ -392,11 +408,11 @@
               </p>
               <ul class="bullet-list">
                 <li
-                  data-it="Ho definito scenari utente e testato prototipi interattivi per concept wearable IoT dedicati all'accessibilita."
+                  data-it="Ho definito scenari utente e testato prototipi interattivi per concept wearable IoT dedicati all'accessibilità."
                   data-en="Defined user scenarios and tested interactive prototypes for IoT wearable concepts."
                 >
                   Ho definito scenari utente e testato prototipi interattivi per concept wearable
-                  IoT dedicati all'accessibilita.
+                  IoT dedicati all'accessibilità.
                 </li>
               </ul>
             </div>
@@ -409,10 +425,10 @@
             <div class="timeline-item">
               <p class="item-meta" data-it="2019 - 2021" data-en="2019 - 2021">2019 - 2021</p>
               <h3
-                data-it="Universita degli Studi di Siena - Laurea Magistrale"
+                data-it="Università degli Studi di Siena - Laurea Magistrale"
                 data-en="University of Siena - Master's Degree"
               >
-                Universita degli Studi di Siena - Laurea Magistrale
+                Università degli Studi di Siena - Laurea Magistrale
               </h3>
               <p
                 data-it="Strategie e Tecniche di Comunicazione, Tecnologie e Metodi per l'Experience Design (LM-92), 110 e lode."
@@ -425,10 +441,10 @@
             <div class="timeline-item">
               <p class="item-meta" data-it="2016 - 2019" data-en="2016 - 2019">2016 - 2019</p>
               <h3
-                data-it="Universita degli Studi di Siena - Laurea Triennale"
+                data-it="Università degli Studi di Siena - Laurea Triennale"
                 data-en="University of Siena - Bachelor's Degree"
               >
-                Universita degli Studi di Siena - Laurea Triennale
+                Università degli Studi di Siena - Laurea Triennale
               </h3>
               <p
                 data-it="Scienze della Comunicazione (L-20), 104/110."
@@ -456,27 +472,25 @@
             </div>
             <ul class="bullet-list">
               <li>
-                Logo redesign per
-                <a
-                  class="inline-link"
-                  href="https://benedettaaucone.it/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  benedettaaucone.it
-                </a>
+                Logo redesign per progetto personale
               </li>
               <li
-                data-it="Attivita di volontariato per associazioni locali"
+                data-it="Attività di volontariato per associazioni locali"
                 data-en="Volunteer work for local associations"
               >
-                Attivita di volontariato per associazioni locali
+                Attività di volontariato per associazioni locali
               </li>
               <li
                 data-it="Esperienza come scrutatrice e segretaria di seggio"
                 data-en="Election officer experience as poll clerk and secretary"
               >
                 Esperienza come scrutatrice e segretaria di seggio
+              </li>
+              <li
+                data-it="Ho giocato a pallavolo per 20 anni; oggi mi dedico a yoga e mindfulness."
+                data-en="I played volleyball for 20 years; today I focus on yoga and mindfulness."
+              >
+                Ho giocato a pallavolo per 20 anni; oggi mi dedico a yoga e mindfulness.
               </li>
             </ul>
           </article>
@@ -524,7 +538,12 @@
 
           <article class="content-section" id="tools">
             <div class="section-heading">
-              <h2 data-it="Tools & Platforms" data-en="Tools & Platforms">Tools &amp; Platforms</h2>
+              <h2
+                data-it="Strumenti e piattaforme utilizzate"
+                data-en="Tools & Platforms Used"
+              >
+                Strumenti e piattaforme utilizzate
+              </h2>
             </div>
             <div class="tools-grid">
               <div class="tool-item">
